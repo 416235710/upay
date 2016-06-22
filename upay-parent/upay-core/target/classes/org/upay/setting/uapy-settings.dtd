@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!ELEMENT configuration (properties*, settings*)>
+
+<!ELEMENT properties (property*)>
+<!ATTLIST properties
+path CDATA #IMPLIED
+url CDATA #IMPLIED
+>
+
+<!ELEMENT property EMPTY>
+<!ATTLIST property
+name CDATA #REQUIRED
+value CDATA #REQUIRED
+>
+
+<!ELEMENT settings (property*)>
+<!ATTLIST settings
+id CDATA #REQUIRED
+class CDATA #REQUIRED
+>
